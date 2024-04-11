@@ -4,9 +4,8 @@ local Luxt = Luxtl.CreateWindow("Wisteria GUI", 6105620301)
 
 local mainTab = Luxt:Tab("Tap Fram", 6087485864)
 local ff = Examples:Section("Auto Fram")
-ff:DropDown("Favorite Food?", {"Melee", "Sword", "Blox Fruit"}, function(food) 
+ff:DropDown("Favorite Food?", {"Melee", "Sword", "Blox Fruit"}), function(food) 
     print(food)
-)
 DropdownSelectWeapon:SetValue('Melee')
 DropdownSelectWeapon:OnChanged(function(Value)
     ChooseWeapon = Value
