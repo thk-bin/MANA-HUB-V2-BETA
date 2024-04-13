@@ -3,26 +3,26 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "CUTTAY Hub-Blox Fruit",
-    SubTitle = "By binhackerlo | Community: BO LAC CUA TAY", 
+    Title = "Infinite Hub | Blox Fruits",
+    SubTitle = "Infinite",
     TabWidth = 160,
-    Size = UDim2.fromOffset(550, 370),
+    Size = UDim2.fromOffset(500, 320),
     Acrylic = false,
     Theme = "Rose",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Tap Fram", Icon = "xx" }),
-    Setting = Window:AddTab({ Title = "Tap Setting", Icon = "xx" }),
-    Stats = Window:AddTab({ Title = "Tap Stats", Icon = "xx" }),
-    Player = Window:AddTab({ Title = "Tap Player", Icon = "xx" }),
-    Teleport = Window:AddTab({ Title = "Tap Island", Icon = "xx"}),
-    Fruit = Window:AddTab({ Title = "Tap Fruit", Icon = "xx" }),
-    Raid = Window:AddTab({ Title = "Tap Raid", Icon = "xx" }),
-    Race = Window:AddTab({ Title = "Tap Race", Icon = "xx" }),
-    Shop = Window:AddTab({ Title = "Tap Shop", Icon = "xx" }),
-	Misc = Window:AddTab({ Title = "Tap Misc", Icon = "xx" }),
-    Hop = Window:AddTab({ Title = "Tap Sv Hop", Icon = "xx" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "m" }),
+    Setting = Window:AddTab({ Title = "Setting", Icon = "m" }),
+    Stats = Window:AddTab({ Title = "Stats", Icon = "m" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "m" }),
+    Teleport = Window:AddTab({ Title = "Island", Icon = "m" }),
+    Fruit = Window:AddTab({ Title = "Fruit", Icon = "m" }),
+    Raid = Window:AddTab({ Title = "Raid", Icon = "m" }),
+    Race = Window:AddTab({ Title = "Race V4", Icon = "m" }),
+    Shop = Window:AddTab({ Title = "Shop", Icon = "m" }),
+	Misc = Window:AddTab({ Title = "Misc", Icon = "m" }),
+    Hop = Window:AddTab({ Title = "Hop", Icon = "m" }),
 }
 local Options = Fluent.Options
 do
@@ -2542,13 +2542,13 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
         Multi = false,
         Default = 1,
     })
-    DropdownDelayAttack:SetValue("Normal Attack")
+    DropdownDelayAttack:SetValue("Fast Attack")
     DropdownDelayAttack:OnChanged(function(Value)
     _G.FastAttackFaiFao_Mode = Value
 	if _G.FastAttackFaiFao_Mode == "Fast Attack" then
-		_G.Fast_Delay = 0.2
+		_G.Fast_Delay = 0.1
 	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
-		_G.Fast_Delay = 0.20
+		_G.Fast_Delay = 0.15
 	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
 		_G.Fast_Delay = 0
 	end
@@ -4364,7 +4364,7 @@ ToggleAutoW:OnChanged(function(Value)
         end
         for r, v in pairs(game:GetService("Workspace").Map.MysticIsland:GetDescendants()) do
             if v:IsA("MeshPart") then
-                if v.MeshId == "rbxassetid://16435032782" then
+                if v.MeshId == "rbxassetid://6745037796" then
                     return v
                 end
             end
@@ -5605,7 +5605,7 @@ function InfAbility()
             inf.Rotation = NumberRange.new(0, 0)
             inf.Speed = NumberRange.new(30, 30)
             inf.SpreadAngle = Vector2.new(360, 360)
-            inf.Texture = "rbxassetid://16435032782"
+            inf.Texture = "rbxassetid://243098098"
             inf.VelotyInheritance = 0
             inf.ZOffset = 2
             inf.Transparency = NumberSequence.new(0)
@@ -7079,7 +7079,7 @@ Tabs.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "VN: Mưa trái ác quỷ",
 	Callback = function()
-        for i, v in pairs(game:GetObjects("rbxassetid://16435032782")[1]:GetChildren()) do
+        for i, v in pairs(game:GetObjects("rbxassetid://14759368201")[1]:GetChildren()) do
             v.Parent = game.Workspace.Map
             v:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
             if v.Fruit:FindFirstChild("AnimationController") then
@@ -7453,6 +7453,7 @@ end
 Fluent:Notify({
     Title = "CUTTAYHub-Blox Fruit",
     Content = "The script has loaded successfully!",
+    Content = "Discord server link: https://discord.gg/vvXegtQr"
     Durtion = 3
 })
 warn("CUTTAYHub Loading Completed!")
