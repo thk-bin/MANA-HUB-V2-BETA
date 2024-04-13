@@ -3,26 +3,26 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "Infinite Hub | Blox Fruits",
-    SubTitle = "Infinite",
+    Title = "CUTTAY Hub-Blox Fruit",
+    SubTitle = "By binhackerlo | Community: BO LAC CUA TAY", 
     TabWidth = 160,
-    Size = UDim2.fromOffset(500, 320),
+    Size = UDim2.fromOffset(550, 370),
     Acrylic = false,
     Theme = "Rose",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "m" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "m" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "m" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "m" }),
-    Teleport = Window:AddTab({ Title = "Island", Icon = "m" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "m" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "m" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "m" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "m" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "m" }),
-    Hop = Window:AddTab({ Title = "Hop", Icon = "m" }),
+    Main = Window:AddTab({ Title = "Tap Fram", Icon = "xx" }),
+    Setting = Window:AddTab({ Title = "Tap Setting", Icon = "xx" }),
+    Stats = Window:AddTab({ Title = "Tap Stats", Icon = "xx" }),
+    Player = Window:AddTab({ Title = "Tap Player", Icon = "xx" }),
+    Teleport = Window:AddTab({ Title = "Tap Island", Icon = "xx"}),
+    Fruit = Window:AddTab({ Title = "Tap Fruit", Icon = "xx" }),
+    Raid = Window:AddTab({ Title = "Tap Raid", Icon = "xx" }),
+    Race = Window:AddTab({ Title = "Tap Race", Icon = "xx" }),
+    Shop = Window:AddTab({ Title = "Tap Shop", Icon = "xx" }),
+	Misc = Window:AddTab({ Title = "Tap Misc", Icon = "xx" }),
+    Hop = Window:AddTab({ Title = "Tap Sv Hop", Icon = "xx" }),
 }
 local Options = Fluent.Options
 do
@@ -7453,7 +7453,6 @@ end
 Fluent:Notify({
     Title = "CUTTAYHub-Blox Fruit",
     Content = "The script has loaded successfully!",
-    Content = "Discord server link: https://discord.gg/vvXegtQr"
     Durtion = 3
 })
 warn("CUTTAYHub Loading Completed!")
